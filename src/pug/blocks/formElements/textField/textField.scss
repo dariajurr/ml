@@ -1,0 +1,23 @@
+.textFields {
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+  &:not(:first-child) {margin-top: 20px;
+  }
+}
+
+.title {
+  font-family: 'Montserrat-Bold';
+  font-size: $font-sm;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkShade100;
+  margin-bottom: 5px;
+}
+
+.state {
+  font-size: $font-sm;
+  text-align: right;
+  text-transform: uppercase;
+  color: $darkShade50;
+}

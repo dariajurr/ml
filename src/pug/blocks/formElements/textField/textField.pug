@@ -1,0 +1,10 @@
+mixin fieldItem(type,name,id, className, placeholder,title,state)
+  if(state) 
+    .textFields 
+      label(for=id).title=title   
+      label.state=state
+    input(type=type,id=id, class=className, name=name, placeholder=placeholder)
+  else  
+      label(for=id).title=title      
+      input(type=type,id=id, class=className, name=name, placeholder=placeholder)
+  

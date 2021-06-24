@@ -1,0 +1,31 @@
+.dropdown {
+  background: white;
+  border: 1px solid $darkShade25;
+  border-radius: 4px;
+  height: 44px;
+  padding-left: 15px;
+  font-family: 'Montserrat-Regular', sans-serif;
+  color: $darkShade75;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  &:not([type="date"]) {
+    width: 320px;
+  }
+
+  &:focus,
+  &:hover,
+  &.focus {
+    border: 1px solid $darkShade50;
+    color: $darkShade75;
+  }
+
+  &::after {
+    content: 'expand_more';
+    font-family: 'MaterialIcons';
+    font-size: $font-xlg;
+  }
+}

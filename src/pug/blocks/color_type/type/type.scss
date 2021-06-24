@@ -1,0 +1,17 @@
+.type {
+  display: flex;
+  max-width: 436px;
+  &__tagName {
+    color:$darkShade25;
+    font-family: inherit;
+    font-weight: normal;
+    min-width: 37px;
+    text-align: right;
+    
+    
+  }
+  &__description {
+    margin-left: 30px;
+    margin-bottom: 51px;
+  }
+}

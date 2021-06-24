@@ -1,0 +1,23 @@
+
+.color {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	
+	&__block {
+		width: 70px;
+		height: 70px;		
+		border-radius: 6px;
+		margin-right: 40px;
+	}
+	&__number {				
+		font-size: $font-lg;		
+		color: $darkShade100;
+	}
+
+	&__name,
+	&__number {
+		line-height: 28px;
+	}
+}

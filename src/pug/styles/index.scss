@@ -1,0 +1,17 @@
+// ---------- Главный файл стилей ---------- //
+@import "utils/reset.scss";
+@import "utils/vars.scss";
+@import "utils/mixins.scss";
+@import "utils/fonts.scss";
+@import "utils/libs.scss";
+@import "utils/global";
+;
+
+
+
+@import "@blocks/color_type/color_type";
+@import "@blocks/color_type/colors/colors";
+@import "@blocks/color_type/type/type";
+@import "@blocks/formElements/textField/textField";
+@import "@blocks/formElements/formElements";
+@import "@blocks/formElements/dropdown/dropdown";

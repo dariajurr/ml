@@ -1,0 +1,7 @@
+mixin colorItem(name, color, rgba) 
+	.color 		
+		.color__block(style='background-color:' + (rgba||color)  + ';')
+		.color__description
+			h2.color__name=name
+			p.color__number=color
+

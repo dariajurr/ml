@@ -1,0 +1,21 @@
+@use "@styles/utils/vars";
+
+.textField {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+  padding: 145px 158px 145px 149.74px;
+
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+
+  img {
+    width: 300px;
+  }
+}
