@@ -5,3 +5,8 @@
 
 // Пример подключения:
 // import './common.js';
+import '../pug/blocks/formElements/counter/counter.js';
+import '../pug/blocks/formElements/dropdown/dropdown.js';
+
+
+

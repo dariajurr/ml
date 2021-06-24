@@ -1,5 +1,11 @@
-mixin dropdown(options) 
+mixin dropdown(question, array) 
   div.textFields
-    label(for='item').title='Dropdown' 
-  button.dropdown(id='item')='Сколько гостей?'
-  
+    label(for='dropdown__btn').title='Dropdown' 
+  div.dropdown    
+    button.dropdown__btn(id='dropdown__btn')=question
+    div.dropdown__list.dropdown__close
+      each item in array
+        div.dropdown__item=item 
+          include ../counter/counter
+      
+      

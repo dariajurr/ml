@@ -40,22 +40,22 @@ label {
   display: inline-block;
 }
 
-input,
-select {
-  display: block;
-  border: 1px solid $darkShade25;
-  border-radius: 4px;
-  font-size: $font-med;
-  height: 44px;
-  padding-left: 15px;
+input {
+  
+  
 
   &::placeholder {
     color: $darkShade25;
   }
-
-  &:not([type="date"]) {
+ 
+  &[type="text"]{
     width: 320px;
-  }
+
+    border: 1px solid $darkShade25;
+    border-radius: 4px;
+    font-size: $font-med;
+    height: 44px;
+    padding-left: 15px;  }
 
   &:focus,
   &:hover,
@@ -71,5 +71,11 @@ select {
   &+label {
     margin-top: 20px;
 
+  }
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
   }
 }
