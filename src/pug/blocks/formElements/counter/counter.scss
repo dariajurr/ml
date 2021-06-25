@@ -3,21 +3,17 @@
     max-width: 92px;
 
     &__button {
-        height: 30px;
-        width: 30px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        border-radius: 22px;    
-        font-size: 18px;
-        line-height: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      height: 30px;
+      width: 30px;
+      border: 1px solid $darkShade50;
+      border-radius: 22px;    
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;      
 
-        &:focus,
-        &:hover {
-          border: 1px solid $darkShade50;
-          color: $darkShade75;
-        }
     }
 
     &__total {
@@ -41,5 +37,8 @@
         }
     }
 
+    .zero {
+      border: 1px solid $darkShade25;
+    }
 
 }

@@ -6,21 +6,20 @@ const changeCounter = ()=> {
         total.value++;
     }
 
+    
     document.body.addEventListener('click', (event)=> {
         const target = event.target;
         if (target.matches('.counter__button')) {  
-            const total = target.parentNode.children[1];            
+            const total = target.parentNode.children[1]; 
             if (target.matches('.counter__minus')&&(total.value>0)) { 
-
-              minusCount(total);
-            }  else  if (target.matches('.counter__plus')){
-                plusCount(total);
-            }
+                minusCount(total);
+              }  else  if (target.matches('.counter__plus')){
+                  plusCount(total);                  
+              }           
+            
             
         }
     })
-  
-
 }
 
 changeCounter();

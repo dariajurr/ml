@@ -1,29 +1,26 @@
-.dropdown {
-  border: 1px solid $darkShade25;
-  border-radius: 4px;  
-  font-family: 'Montserrat-Regular', sans-serif;
-  color: $darkShade75;
+.dropdown {    
   text-align: left;    
   width: 320px;
-  overflow: hidden;
-  position: relative;
-
-  &:focus,
-  &:hover {
-    border: 1px solid $darkShade50;
-    color: $darkShade75;
-  }
+  overflow: hidden;  
 
   &__btn  {
     background: white;    
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: inherit  ;
     color: $darkShade75;
     width: 100%;
     height: 44px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid $darkShade25;
+    border-radius: 4px;
+    padding-left: 15px;
 
+    
+    &:hover {
+      border: 1px solid $darkShade50;
+      color: $darkShade75;
+    }
    
 
     &::after {
@@ -34,9 +31,15 @@
   }
   
   &__list {
+    position: absolute;
+    background-color: white;
     padding: 7px 7px 7px 15px;   
     display: block;
-    border-top: 1px solid $darkShade25;
+    border: 1px solid $darkShade50;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    width: 320px;
+    
   }  
 
   &__item {
@@ -48,6 +51,11 @@
   
   &__close  { 
     display: none;
+  }
+
+  &__open {
+    border: 1px solid $darkShade50;    
+    border-radius: 4px 4px 0 0;
   }
 }
 
